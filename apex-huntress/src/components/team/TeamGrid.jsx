@@ -1,11 +1,12 @@
 import favicon from '../../assets/img/favicon.jpeg'
 import { CrownIcon, User } from 'lucide-react'
-import { FaTwitter, FaGithub} from 'react-icons/fa'
+import { FaXTwitter, FaGithub} from 'react-icons/fa6'
 
 const icons = {
   "👑": <CrownIcon className="h-3 w-3 text-cyan-400" />,
   "👥": <User className="h-3 w-3 text-cyan-400" />,
 };
+
 
 const TEAM = [
   {
@@ -13,18 +14,21 @@ const TEAM = [
     role: "Founder",
     icon: "👑",
     desc: "Architect of the Apex universe and keeper of the genesis lore. Steering the franchise across Cronos.",
+    href: 'https://x.com/Cryptojoe80'
   },
   {
     name: "Alessandro",
     role: "Community Manager",
     icon: "👥",
     desc: "Voice of the pride. Bridges holders, mods and the studio across every channel, every day.",
+    href: 'https://x.com/Alessandroo212'
   },
   {
     name: "Wisdom777",
     role: "Community Manager",
     icon: "👥",
     desc: "Keeps the alpha flowing and the pride aligned. The signal stays clean on his watch.",
+    href: 'https://x.com/1Wisdom777'
   },
 ];
 
@@ -57,8 +61,12 @@ export default function TeamGrid() {
             </div>
             <p className="mt-4 text-sm text-slate-400">{m.desc}</p>
             <div className="mt-4 flex gap-2">
-                <FaTwitter className="h-4 w-4 text-slate-400" />
-                <FaGithub className="h-4 w-4 text-slate-400" />
+                <a href={m.href} target="_blank" rel="noopener noreferrer">
+                  <FaXTwitter className="h-4 w-4 text-slate-400" />
+                </a>
+                <a href={m.github} target="_blank" rel="noopener noreferrer">
+                  <FaGithub className="h-4 w-4 text-slate-400" />
+                </a>
             </div>
           </div>
         ))}

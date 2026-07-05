@@ -5,6 +5,7 @@ import Comic from "./pages/Comic";
 import ComicReader from "./pages/ComicReader";
 import Team from "./pages/Team";
 import { useEffect } from "react";
+import MusicToggle from "./components/shared/MusicToggle";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -28,6 +29,7 @@ export default function App() {
 
   return (
     <BrowserRouter>
+    <MusicToggle />
       <AosRefreshOnNavigate />
       <Routes>
         <Route path="/" element={<Home />} />

@@ -1,5 +1,6 @@
 import ImagePlaceholder from "../shared/ImagePlaceholder";
 import image from '../../assets/img/img1.jpeg'
+import heroBg from '../../assets/img/img1.jpeg'
 
 function Stat({ label, value }) {
   return (
@@ -13,8 +14,18 @@ function Stat({ label, value }) {
 export default function Hero() {
   return (
     <section className="relative overflow-hidden px-6 pb-20 pt-16" data-aos="fade-up">
+      {/* background image layer */}
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{ backgroundImage: `url(${heroBg})` }}
+      />
+      {/* dark overlay so text stays readable over the background */}
+      <div className="absolute inset-0 bg-[#060B14]/80" />
+
+      {/* existing radial glow, now layered on top of the bg + overlay */}
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,rgba(34,211,238,0.12),transparent_60%)]" />
-      <div className="mx-auto grid max-w-6xl gap-10 md:grid-cols-2 md:items-center">
+
+      <div className="relative mx-auto grid max-w-6xl gap-10 md:grid-cols-2 md:items-center">
         <div>
           <p className="mb-4 font-mono text-xs uppercase tracking-widest text-cyan-400">
             ● Cronos · Genesis Drop · 369 Supply
@@ -43,9 +54,9 @@ export default function Hero() {
         </div>
 
         <img
-        src={image}
-        alt="Genesis huntress in full armor"
-        className="aspect-[4/5] w-full motion-safe:animate-float motion-safe:animate-glow-pulse rounded-2xl border border-cyan-500 object-cover"
+          src={image}
+          alt="Genesis huntress in full armor"
+          className="aspect-[4/5] w-full motion-safe:animate-float motion-safe:animate-glow-pulse rounded-2xl border border-cyan-500 object-cover"
         />
       </div>
     </section>

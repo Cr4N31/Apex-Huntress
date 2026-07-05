@@ -11,7 +11,7 @@ const icons = {
 
 const REWARDS = [
   { icon: "🎁", title: "Mint Milestone Giveaways", desc: "Major rewards triggered at every supply milestone." },
-  { icon: "👑", title: "Top 3 Holder Giveaway", desc: "Elite prizes airdropped to top holders after mint-out." },
+  { icon: "👑", title: "Top 2 Holder Giveaway", desc: "Elite prizes airdropped to top holders after mint-out." },
   { icon: "🏆", title: "Future Competitions", desc: "In-game tournaments with exclusive Apex prize pools." },
   { icon: "👥", title: "Community Events", desc: "Private AMAs, lore drops, alpha calls and gatherings." },
   { icon: "🎟️", title: "Exclusive Raffles", desc: "Holder-only raffles for rare gear, art and tokens." },

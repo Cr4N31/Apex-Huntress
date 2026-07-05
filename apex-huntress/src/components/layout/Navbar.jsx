@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 import favicon from '../../assets/img/favicon.jpeg'
 import { RocketIcon, Menu, X } from "lucide-react";
 
+
+const MintLink = "https://www.croarmy.site/marketplace/mint/launchpad-7e9c0ed6";
+
 const LINKS = [
   { label: "Home", href: "/", index: "01" },
   { label: "Holders", href: "/holders", index: "02" },
@@ -40,9 +43,9 @@ export default function Navbar({ active = "Home" }) {
         </nav>
 
         <div className="flex items-center gap-3">
-          <button className="hidden items-center gap-2 rounded-full bg-gradient-to-r from-cyan-400 to-blue-500 px-5 py-2 text-xs font-bold uppercase tracking-wide text-[#060B14] shadow-[0_0_20px_rgba(34,211,238,0.4)] transition hover:brightness-110 sm:flex">
+          <a href={MintLink} target="_blank" rel="noopener noreferrer" className="hidden items-center gap-2 rounded-full bg-gradient-to-r from-cyan-400 to-blue-500 px-5 py-2 text-xs font-bold uppercase tracking-wide text-[#060B14] shadow-[0_0_20px_rgba(34,211,238,0.4)] transition hover:brightness-110 sm:flex">
             <RocketIcon className="w-4" /> Enter
-          </button>
+          </a>
 
           {/* Hamburger toggle — mobile only */}
           <button
@@ -76,9 +79,9 @@ export default function Navbar({ active = "Home" }) {
               {l.label}
             </Link>
           ))}
-          <button className="mt-2 flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-cyan-400 to-blue-500 px-5 py-2.5 text-xs font-bold uppercase tracking-wide text-[#060B14]">
+          <a href={MintLink} target="_blank" rel="noopener noreferrer" className="mt-2 flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-cyan-400 to-blue-500 px-5 py-2.5 text-xs font-bold uppercase tracking-wide text-[#060B14]">
             <RocketIcon className="w-4" /> Enter
-          </button>
+          </a>
         </nav>
       </div>
     </header>

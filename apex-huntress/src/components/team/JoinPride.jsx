@@ -14,9 +14,9 @@ export default function JoinPride() {
           <button className="rounded-full bg-gradient-to-r from-cyan-400 to-blue-500 px-6 py-3 text-sm font-bold text-[#060B14]">
             Join Discord
           </button>
-          <button className="rounded-full border border-white/15 px-6 py-3 text-sm font-semibold text-slate-200">
+          <a href="https://x.com/ApexHuntress" target="_blank" rel="noopener noreferrer" className="rounded-full border border-white/15 px-6 py-3 text-sm font-semibold text-slate-200">
             Follow on X
-          </button>
+          </a>
         </div>
       </div>
     </section>

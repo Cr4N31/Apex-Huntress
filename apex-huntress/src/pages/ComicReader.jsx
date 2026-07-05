@@ -67,7 +67,7 @@ export default function ComicReader() {
                 key={i}
                 src={src}
                 alt={`Chapter ${chapterId} — Page ${i + 1}`}
-                className="aspect-[3/4] w-full rounded-2xl object-cover"
+                className="w-full rounded-2xl object-cover"
               />
             ))
           : Array.from({ length: chapter.panelCount }, (_, i) => i + 1).map((panelNum) => (
