@@ -4,7 +4,6 @@ import Footer from "../components/layout/Footer";
 import ImagePlaceholder from "../components/shared/ImagePlaceholder";
 
 import comic1Page1 from "../assets/comicImg/comicimg1.jpeg";
-import comic1Page2 from "../assets/comicImg/comicimg2.jpeg";
 import comic1Page3 from "../assets/comicImg/comicimg3.jpeg";
 import comic1Page4 from "../assets/comicImg/comicimg4.jpeg";
 import comic1Page5 from "../assets/comicImg/comicimg5.jpeg";
