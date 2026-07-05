@@ -4,10 +4,10 @@ import Footer from "../components/layout/Footer";
 import ImagePlaceholder from "../components/shared/ImagePlaceholder";
 
 import comic1Page1 from "../assets/comic/comicimg1.jpeg";
-import comic1Page2 from "../assets/comic/comicimg2.jpeg";
-import comic1Page3 from "../assets/comic/comicimg3.jpeg";
-import comic1Page4 from "../assets/comic/comicimg4.jpeg";
-import comic1Page5 from "../assets/comic/comicimg5.jpeg";
+import comic1Page2 from "../assets/comic/comicImg2.jpeg";
+import comic1Page3 from "../assets/comic/comicImg3.jpeg";
+import comic1Page4 from "../assets/comic/comicImg4.jpeg";
+import comic1Page5 from "../assets/comic/comicImg5.jpeg";
 
 const CHAPTERS = {
   "01": {
