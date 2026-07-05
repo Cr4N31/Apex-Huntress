@@ -17,7 +17,7 @@ const FEATURES = [
 
 export default function CollectionOverview() {
   return (
-    <section className="px-6 py-20"  data-aos="fade-up">
+    <section className="px-6 py-20" data-aos="fade-up">
       <div className="mx-auto max-w-6xl">
         <p className="mb-3 font-mono text-xs uppercase tracking-widest text-cyan-400">
           // Collection Overview
