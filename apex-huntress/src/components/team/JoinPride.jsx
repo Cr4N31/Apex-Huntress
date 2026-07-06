@@ -11,10 +11,10 @@ export default function JoinPride() {
           universe.
         </p>
         <div className="mt-7 flex flex-wrap justify-center gap-3">
-          <button className="rounded-full bg-gradient-to-r from-cyan-400 to-blue-500 px-6 py-3 text-sm font-bold text-[#060B14]">
+          <a href="https://discord.gg/qCdSNzh7KM" target="_blank" rel="noopener noreferrer" className="rounded-full bg-gradient-to-r from-cyan-400 to-blue-500 px-6 py-3 text-sm font-bold text-[#060B14]">
             Join Discord
-          </button>
-          <a href="https://x.com/ApexHuntress" target="_blank" rel="noopener noreferrer" className="rounded-full border border-white/15 px-6 py-3 text-sm font-semibold text-slate-200">
+          </a>
+          <a href="https://x.com/Apex_Huntress_" target="_blank" rel="noopener noreferrer" className="rounded-full border border-white/15 px-6 py-3 text-sm font-semibold text-slate-200">
             Follow on X
           </a>
         </div>
