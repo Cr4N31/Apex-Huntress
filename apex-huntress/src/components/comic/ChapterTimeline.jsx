@@ -1,13 +1,14 @@
 import { useEffect, useRef, useState } from "react";
-import image from "../../assets/img/img1.jpeg";
+import img1 from '../../assets/comicpageimg1.jpeg';
+import img2 from '../../assets/comicpageimg2.jpeg'
+import img3 from '../../assets/comicpageimg3.jpeg'
+import img4 from '../../assets/comicpageimg4.jpeg'
 
 const CHAPTERS = [
-  { day: "Day 001", title: "Return to the Pride", desc: "Genesis hunters descend on Cronos VII.", status: "live" },
-  { day: "Day 002", title: "Steel Mane", desc: "Aurora forges her first alliance in the Iron Wastes.", status: "live" },
-  { day: "Day 003", title: "Signal of the Queen", desc: "A broadcast unites the scattered prides.", status: "live" },
-  { day: "Day 004", title: "Hunters of Echo-9", desc: "An ambush behind enemy lines.", status: "live" },
-  { day: "Day 005", title: "Crown of Cinders", desc: "A coronation rewrites the empire.", status: "soon" },
-  { day: "Day 006", title: "The Black Sun", desc: "Coming Soon. The rival pride emerges.", status: "soon" },
+  { day: "Day 001", img: img1, title: "Return to the Pride", desc: "Genesis hunters descend on Cronos VII.", status: "live" },
+  { day: "Day 002", img: img2, title: "Steel Mane", desc: "Aurora forges her first alliance in the Iron Wastes.", status: "live" },
+  { day: "Day 003", img: img3, title: "Signal of the Queen", desc: "A broadcast unites the scattered prides.", status: "live" },
+  { day: "Day 004", img: img4, title: "Hunters of Echo-9", desc: "An ambush behind enemy lines.", status: "live" },
 ];
 
 /**
@@ -114,7 +115,7 @@ export default function ChapterTimeline() {
 
                   <div className="pl-12 md:w-1/2 md:pl-14">
                     <img
-                      src={image}
+                      src={c.img}
                       alt={c.title}
                       label={`${c.title} — chapter cover art`}
                       aspect="aspect-video"

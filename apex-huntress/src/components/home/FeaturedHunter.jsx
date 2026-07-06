@@ -1,5 +1,5 @@
 import ImagePlaceholder from "../shared/ImagePlaceholder";
-import image from '../../assets/img/img1.jpeg'
+import image from '../../assets/img/img12.jpeg'
 
 function Trait({ label, value }) {
   return (

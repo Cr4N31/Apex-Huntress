@@ -1,16 +1,16 @@
 import { useRef } from "react";
 import ImagePlaceholder from "../shared/ImagePlaceholder";
-import img2 from '../../assets/img/img2.jpeg'
-import img3 from '../../assets/img/img3.jpeg'
-import img4 from '../../assets/img/img4.jpeg'
-import img5 from '../../assets/img/img5.jpeg'
+import img6 from '../../assets/img/img6.jpeg'
+import img7 from '../../assets/img/img7.jpeg'
+import img8 from '../../assets/img/img8.jpeg'
+import img9 from '../../assets/img/img9.jpeg'
 
 
 const HUNTERS = [
-  { id: "#001", img: img2, name: "Scarlet Vex", tag: "Stalker" },
-  { id: "#006", img: img3, name: "Verdant Solace", tag: "Sentinel" },
-  { id: "#012", img: img4, name: "Azure Rune", tag: "Hunter" },
-  { id: "#004", img: img5, name: "Solar Nyx", tag: "Vanguard" },
+  { id: "#001", img: img6, name: "Scarlet Vex", tag: "Stalker" },
+  { id: "#006", img: img7, name: "Verdant Solace", tag: "Sentinel" },
+  { id: "#012", img: img8, name: "Azure Rune", tag: "Hunter" },
+  { id: "#004", img: img9, name: "Solar Nyx", tag: "Vanguard" },
 ];
 
 function ArrowBtn({ children, onClick }) {

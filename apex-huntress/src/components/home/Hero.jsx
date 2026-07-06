@@ -1,5 +1,6 @@
 import ImagePlaceholder from "../shared/ImagePlaceholder";
-import image from '../../assets/img/img1.jpeg'
+import { Link } from "react-router-dom";
+import image from '../../assets/img/img11.jpeg'
 import heroBg from '../../assets/img/img1.jpeg'
 
 function Stat({ label, value }) {
@@ -12,6 +13,7 @@ function Stat({ label, value }) {
 }
 
 export default function Hero() {
+    const link = 'https://www.croarmy.site/marketplace/mint/launchpad-7e9c0ed6'
   return (
     <section className="relative overflow-hidden px-6 pb-20 pt-16" data-aos="fade-up">
       {/* background image layer */}
@@ -38,12 +40,29 @@ export default function Hero() {
             reaches of the Cronos galaxy. Elite hunters reclaiming dominance of the pride.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <button className="rounded-full bg-gradient-to-r from-cyan-400 to-blue-500 px-6 py-3 text-sm font-bold text-[#060B14] shadow-[0_0_25px_rgba(34,211,238,0.35)]">
-              Enter the Pride →
-            </button>
-            <button className="rounded-full border border-white/15 px-6 py-3 text-sm font-semibold text-slate-200">
-              Read Comic
-            </button>
+            <a
+              href={link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full bg-gradient-to-r from-cyan-400 to-blue-500 px-6 py-3 text-sm font-bold text-[#060B14] shadow-[0_0_25px_rgba(34,211,238,0.35)]"
+            >
+              Mint Apex Huntress
+            </a>
+
+            <Link
+              to="/comic/read/01"
+              className="rounded-full flex items-center bg-gradient-to-r from-cyan-400 to-blue-500 px-5 py-2.5 text-xs font-bold text-[#060B14]"
+            >
+              Read Comic →
+            </Link>
+            <a
+              href="https://obsidian.finance/crommunities/rzo3ocAUBoY01O7JS0Ji/nfts"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full flex items-center bg-gradient-to-r from-cyan-400 to-blue-500 px-5 py-2.5 text-xs font-bold text-[#060B14]"
+            >
+              Staking
+            </a>
           </div>
 
           <div className="mt-10 grid max-w-md grid-cols-3 gap-3">
